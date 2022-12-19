@@ -16,7 +16,7 @@ int main()
 	if(s>9)
 	{
 		q=s;
-	}
+}
 
 	}
 	if(s==1||s==7)
@@ -27,6 +27,4 @@ int main()
 	{
 		printf("False");
 	}
-	
-//	printf("%d",s);
 }
