@@ -1,16 +1,15 @@
- #include <stdio.h>
-int main() {
-	int x, y, res;
-	scanf("%d %d", &x, &y);
-	res = (x > y) ? x : y;
-
-	while (1) {
-		if (res % x == 0 && res % y == 0) {
-			printf("%d",res);
-			break;
-		}
-		++res;
-	}
-
-	return 0;
+#include<stdio.h>
+int main()
+{
+    int a,b,i,lcm,gcd;
+    scanf("%d%d",&a,&b);
+    for(i=1;i<=a&&i<=b;i++)
+    {
+        if(a%i==0&&b%i==0)
+        {
+            gcd=i;
+        }
+    }
+    lcm=(a*b)/gcd;
+    printf("%d",lcm);
 }
